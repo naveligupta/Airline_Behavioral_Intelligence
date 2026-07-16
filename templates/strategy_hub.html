@@ -1,0 +1,173 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<section class="hero">
+
+<div class="container text-center">
+
+<h1>Strategy Hub</h1>
+
+<p>
+
+Machine Learning Performance and Business Strategy
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<div class="text-center mb-5">
+
+<h2 class="section-title">
+
+Model Performance
+
+</h2>
+
+</div>
+
+<div class="row">
+
+<div class="col-md-3">
+
+<div class="kpi-card">
+
+<h2>{{ metrics["Accuracy"] }}</h2>
+
+<p>Accuracy</p>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+
+<div class="kpi-card">
+
+<h2>{{ metrics["Precision"] }}</h2>
+
+<p>Precision</p>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+
+<div class="kpi-card">
+
+<h2>{{ metrics["Recall"] }}</h2>
+
+<p>Recall</p>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+
+<div class="kpi-card">
+
+<h2>{{ metrics["F1 Score"] }}</h2>
+
+<p>F1 Score</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<div class="feature-card">
+
+<h3>
+
+Feature Importance
+
+</h3>
+
+<hr>
+
+{{ chart|safe }}
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<div class="feature-card">
+
+<h3>
+
+Business Recommendations
+
+</h3>
+
+<hr>
+
+<ul>
+
+<li>Prioritize customers with a long gap since their last flight.</li>
+
+<li>Reward customers with declining flight frequency.</li>
+
+<li>Offer personalized promotions to medium-risk customers.</li>
+
+<li>Increase loyalty engagement through bonus miles.</li>
+
+<li>Monitor redemption behavior to identify potential churn.</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<div class="feature-card">
+
+<h3>
+
+Why Decision Tree?
+
+</h3>
+
+<hr>
+
+<p>
+
+The tuned Decision Tree model achieved strong predictive performance while remaining highly interpretable. Unlike black-box models, it allows airline managers to understand the key factors driving customer churn and supports data-driven retention strategies.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+{% endblock %}

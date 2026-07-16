@@ -1,0 +1,213 @@
+{% extends "base.html" %} {% block content %}
+
+<!-- ====================================== -->
+<!-- PAGE HEADER -->
+<!-- ====================================== -->
+
+<section class="hero">
+  <div class="container text-center">
+    <h1>Flight Deck</h1>
+
+    <p>Executive Dashboard for Airline Performance Monitoring</p>
+  </div>
+</section>
+
+<!-- ====================================== -->
+<!-- KPI SECTION -->
+<!-- ====================================== -->
+<section>
+  <div class="container">
+    <div class="text-center">
+      <h2 class="section-title">Executive Overview</h2>
+
+      <p class="section-subtitle">
+        Key Performance Indicators of the Airline Loyalty Program
+      </p>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-lg-3">
+        <div class="kpi-card">
+          <h2>{{ "{:,.0f}".format(metrics["Total Customers"]) }}</h2>
+
+          <p>Total Customers</p>
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        <div class="kpi-card">
+          <h2>{{ "{:,.0f}".format(metrics["Active Customers"]) }}</h2>
+
+          <p>Active Customers</p>
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        <div class="kpi-card">
+          <h2>{{ "{:.2f}".format(metrics["Churn Rate (%)"]) }}%</h2>
+
+          <p>Churn Rate</p>
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        <div class="kpi-card">
+          <h2>{{ "{:,.0f}".format(metrics["At-Risk Customers"]) }}</h2>
+
+          <p>At-Risk Customers</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====================================== -->
+<!-- CHARTS SECTION -->
+<!-- ====================================== -->
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+        <div class="feature-card">
+          <h4>
+            <i class="bi bi-bar-chart-fill"></i>
+
+            Churn Rate by Customer Segment
+          </h4>
+
+          <br />
+
+          <div id="main-chart">{{ churn_chart|safe }}</div>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="feature-card">
+          <h4>
+            <i class="bi bi-lightbulb-fill"></i>
+
+            Business Insights
+          </h4>
+
+          <hr />
+
+          <ul>
+            <li>Loyal customers contribute the highest number of flights.</li>
+
+            <li>Inactive members have the highest churn rate.</li>
+
+            <li>Growing Customers need targeted retention campaigns.</li>
+
+            <li>Customer engagement decreases significantly before churn.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====================================== -->
+<!-- EXECUTIVE ANALYTICS -->
+<!-- ====================================== -->
+
+<section>
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="section-title">Executive Analytics</h2>
+
+      <p class="section-subtitle">
+        Customer behaviour and loyalty insights across all passenger segments.
+      </p>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-6 mb-4">
+        <div class="feature-card">
+          <h4>
+            <i class="bi bi-airplane-fill"></i>
+
+            Average Flights by Segment
+          </h4>
+
+          <hr />
+
+          {{ flights_chart|safe }}
+        </div>
+      </div>
+
+      <div class="col-lg-6 mb-4">
+        <div class="feature-card">
+          <h4>
+            <i class="bi bi-calendar-check-fill"></i>
+
+            Loyalty Tenure
+          </h4>
+
+          <hr />
+
+          {{ tenure_chart|safe }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====================================== -->
+<!-- EXECUTIVE INSIGHTS -->
+<!-- ====================================== -->
+
+<section>
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="section-title">Key Business Insights</h2>
+
+      <p class="section-subtitle">
+        Summary generated from airline customer behaviour.
+      </p>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-3 mb-4">
+        <div class="feature-card">
+          <i class="bi bi-people-fill"></i>
+
+          <h4>Loyal Customers</h4>
+
+          <p>Highest contributor to airline revenue and flight activity.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-3 mb-4">
+        <div class="feature-card">
+          <i class="bi bi-graph-down-arrow"></i>
+
+          <h4>Growing Customers</h4>
+
+          <p>Require engagement campaigns to improve loyalty.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-3 mb-4">
+        <div class="feature-card">
+          <i class="bi bi-exclamation-triangle-fill"></i>
+
+          <h4>Inactive Members</h4>
+
+          <p>Highest probability of churn.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-3 mb-4">
+        <div class="feature-card">
+          <i class="bi bi-stars"></i>
+
+          <h4>Recommendations</h4>
+
+          <p>Target offers based on customer behaviour and tenure.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

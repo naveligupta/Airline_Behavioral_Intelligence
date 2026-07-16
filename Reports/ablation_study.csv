@@ -1,0 +1,7 @@
+Metric,With 'Months Since Last Flight',Without 'Months Since Last Flight'
+Accuracy,98.15,96.04
+Precision,92.0,85.0
+Recall,83.0,57.0
+F1 Score,87.0,68.0
+False Positives,17.0,23.0
+False Negatives,39.0,97.0

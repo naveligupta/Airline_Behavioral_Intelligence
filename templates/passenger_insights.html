@@ -1,0 +1,159 @@
+{% extends "base.html" %} {% block content %}
+
+<!-- =============================== -->
+<!-- HERO -->
+<!-- =============================== -->
+
+<section class="hero">
+  <div class="container text-center">
+    <h1>Passenger Insights</h1>
+
+    <p>
+      Explore customer segments, behavioural patterns and loyalty
+      characteristics.
+    </p>
+  </div>
+</section>
+
+
+<!-- =============================== -->
+<!-- SEGMENT DISTRIBUTION -->
+<!-- =============================== -->
+
+<section>
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="section-title">Customer Segmentation</h2>
+
+      <p class="section-subtitle">
+        Overview of behavioural customer groups identified using clustering.
+      </p>
+    </div>
+
+    <div class="feature-card">{{ segment_chart|safe }}</div>
+  </div>
+</section>
+
+<section>
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <h2 class="section-title">
+                Customer Segmentation using PCA
+            </h2>
+
+            <p class="section-subtitle">
+                K-Means customer clusters visualized using Principal Component Analysis (PCA).
+            </p>
+
+        </div>
+
+        <div class="feature-card">
+
+            <img
+                src="{{ url_for('static', filename='images/pca_clusters.png') }}"
+                class="img-fluid"
+                alt="PCA Clusters">
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =============================== -->
+<!-- CUSTOMER PERSONAS -->
+<!-- =============================== -->
+
+<section>
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="section-title">Customer Personas</h2>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6 col-lg-3 mb-4">
+        <div class="feature-card">
+          <h4>✈ Loyal Frequent Travelers</h4>
+
+          <p>Highest CLV, frequent flyers and lowest churn risk.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3 mb-4">
+        <div class="feature-card">
+          <h4>📈 Growing Customers</h4>
+
+          <p>Moderate activity with excellent future potential.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3 mb-4">
+        <div class="feature-card">
+          <h4>⭐ High-Engagement New Travelers</h4>
+
+          <p>Recently enrolled customers showing exceptional engagement.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3 mb-4">
+        <div class="feature-card">
+          <h4>⚠ Inactive Members</h4>
+
+          <p>Low activity and highest probability of churn.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============================== -->
+<!-- BUSINESS RECOMMENDATIONS -->
+<!-- =============================== -->
+
+<section>
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="section-title">Business Recommendations</h2>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="feature-card">
+          <h4>Retention Strategy</h4>
+
+          <ul>
+            <li>Offer bonus miles to inactive members.</li>
+
+            <li>Target customers inactive for more than 6 months.</li>
+
+            <li>Introduce personalized loyalty campaigns.</li>
+
+            <li>Reward repeat travelers with premium benefits.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="feature-card">
+          <h4>Growth Opportunities</h4>
+
+          <ul>
+            <li>Upsell premium loyalty cards.</li>
+
+            <li>Increase engagement through seasonal promotions.</li>
+
+            <li>Recommend partner airline offers.</li>
+
+            <li>Improve redemption experience.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

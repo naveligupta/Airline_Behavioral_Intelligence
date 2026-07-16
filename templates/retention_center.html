@@ -1,0 +1,187 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<section class="hero">
+    <div class="container text-center">
+        <h1>Retention Center</h1>
+        <p>
+            Predict customer churn using the trained Machine Learning model.
+        </p>
+    </div>
+</section>
+
+<section>
+
+<div class="container">
+
+<div class="text-center mb-5">
+
+<h2 class="section-title">
+Customer Churn Prediction
+</h2>
+
+<p class="section-subtitle">
+Enter customer details below to predict churn probability.
+</p>
+
+</div>
+
+<div class="row justify-content-center">
+
+<div class="col-lg-10">
+
+<div class="feature-card">
+
+<form method="POST">
+
+<div class="row">
+
+<!-- Total Flights -->
+<div class="col-md-6 mb-3">
+<label>Total Flights</label>
+<input
+type="number"
+class="form-control"
+name="total_flights"
+required>
+</div>
+
+<!-- Total Distance -->
+<div class="col-md-6 mb-3">
+<label>Total Distance</label>
+<input
+type="number"
+class="form-control"
+name="total_distance"
+required>
+</div>
+
+<!-- Total Points Redeemed -->
+<div class="col-md-6 mb-3">
+<label>Total Points Redeemed</label>
+<input
+type="number"
+class="form-control"
+name="points_redeemed"
+required>
+</div>
+
+<!-- Active Months -->
+<div class="col-md-6 mb-3">
+<label>Active Months</label>
+<input
+type="number"
+class="form-control"
+name="active_months"
+required>
+</div>
+
+<!-- Average Flights -->
+<div class="col-md-6 mb-3">
+<label>Average Flights per Active Month</label>
+<input
+type="number"
+step="0.01"
+class="form-control"
+name="avg_flights"
+required>
+</div>
+
+<!-- Redemption Ratio -->
+<div class="col-md-6 mb-3">
+<label>Redemption Ratio</label>
+<input
+type="number"
+step="0.01"
+class="form-control"
+name="redemption_ratio"
+required>
+</div>
+
+<!-- Average Distance -->
+<div class="col-md-6 mb-3">
+<label>Average Distance per Flight</label>
+<input
+type="number"
+step="0.01"
+class="form-control"
+name="avg_distance"
+required>
+</div>
+
+<!-- Loyalty Tenure -->
+<div class="col-md-6 mb-3">
+<label>Loyalty Tenure (Months)</label>
+<input
+type="number"
+class="form-control"
+name="loyalty_tenure"
+required>
+</div>
+
+<!-- Last Flight -->
+<div class="col-md-6 mb-3">
+<label>Months Since Last Flight</label>
+<input
+type="number"
+class="form-control"
+name="months_since_last_flight"
+required>
+</div>
+
+</div>
+
+<div class="text-center mt-4">
+
+<button class="btn btn-primary btn-lg">
+
+Predict Churn
+
+</button>
+
+</div>
+
+</form>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+{% if prediction %}
+
+<section>
+
+<div class="container">
+
+<div class="feature-card text-center">
+
+<h2>Prediction Result</h2>
+
+<hr>
+
+<h1>{{ prediction }}</h1>
+
+<h4>Probability : {{ probability }}</h4>
+
+<p class="mt-4">
+
+{{ recommendation }}
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+{% endif %}
+
+{% endblock %}

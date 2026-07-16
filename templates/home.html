@@ -1,0 +1,345 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!-- ======================================= -->
+<!-- HERO SECTION -->
+<!-- ======================================= -->
+<section class="hero">
+
+    <div class="container">
+
+        <h1>
+            Airline Behavioral Intelligence Platform
+        </h1>
+
+        <p>
+            Turning Passenger Data into Smarter Decisions using
+            Machine Learning, Customer Analytics and Business Intelligence.
+        </p>
+
+        <!-- Launch Dashboard -->
+
+        <a href="{{ url_for('flight_deck') }}"
+           class="btn-airline">
+
+            <i class="bi bi-speedometer2"></i>
+
+            Launch Dashboard
+
+        </a>
+
+        <!-- Predict Churn -->
+
+        <a href="{{ url_for('retention_center') }}"
+           class="btn-outline-airline">
+
+            <i class="bi bi-graph-up-arrow"></i>
+
+            Predict Churn
+
+        </a>
+
+    </div>
+
+</section>
+
+<!-- ======================================= -->
+<!-- PROJECT OVERVIEW -->
+<!-- ======================================= -->
+
+<section id="overview">
+
+<div class="container">
+
+<div class="text-center">
+
+<h2 class="section-title">
+
+Project Overview
+
+</h2>
+
+<p class="section-subtitle">
+
+An end-to-end Airline Analytics Platform that
+helps airlines understand customer behaviour,
+predict churn, identify customer segments and
+support strategic business decisions.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ======================================= -->
+<!-- KPI SECTION -->
+<!-- ======================================= -->
+
+<section>
+
+<div class="container">
+
+<div class="row g-4">
+
+<div class="col-lg-3">
+
+<div class="kpi-card">
+
+<h2>16,737</h2>
+
+<p>Total Customers</p>
+
+</div>
+
+</div>
+
+<div class="col-lg-3">
+
+<div class="kpi-card">
+
+<h2>15,167</h2>
+
+<p>Active Customers</p>
+
+</div>
+
+</div>
+
+<div class="col-lg-3">
+
+<div class="kpi-card">
+
+<h2>12.35%</h2>
+
+<p>Churn Rate</p>
+
+</div>
+
+</div>
+
+<div class="col-lg-3">
+
+<div class="kpi-card">
+
+<h2>98.15%</h2>
+
+<p>Model Accuracy</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!-- ======================================= -->
+<!-- PLATFORM CAPABILITIES -->
+<!-- ======================================= -->
+
+<section>
+
+<div class="container">
+
+<div class="text-center mb-5">
+
+<h2 class="section-title">
+
+Platform Capabilities
+
+</h2>
+
+<p class="section-subtitle">
+
+Everything an airline needs to understand customer behaviour
+and make data-driven business decisions.
+
+</p>
+
+</div>
+
+<div class="row g-4">
+
+<div class="col-lg-3 col-md-6">
+
+<div class="feature-card">
+
+<i class="bi bi-speedometer2"></i>
+
+<h4>Flight Deck</h4>
+
+<p>
+
+Interactive executive dashboard
+containing KPIs and airline performance metrics.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-lg-3 col-md-6">
+
+<div class="feature-card">
+
+<i class="bi bi-people-fill"></i>
+
+<h4>Passenger Insights</h4>
+
+<p>
+
+Understand loyalty behaviour,
+segments and customer activity.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-lg-3 col-md-6">
+
+<div class="feature-card">
+
+<i class="bi bi-graph-up-arrow"></i>
+
+<h4>Retention Center</h4>
+
+<p>
+
+Predict customer churn
+using Machine Learning.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-lg-3 col-md-6">
+
+<div class="feature-card">
+
+<i class="bi bi-lightbulb-fill"></i>
+
+<h4>Strategy Hub</h4>
+
+<p>
+
+Business recommendations
+powered by analytics.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ======================================= -->
+<!-- TECHNOLOGY STACK -->
+<!-- ======================================= -->
+
+<section>
+
+<div class="container">
+
+<div class="text-center">
+
+<h2 class="section-title">
+
+Technology Stack
+
+</h2>
+
+<p class="section-subtitle">
+
+Built using modern Data Analytics
+and Machine Learning technologies.
+
+</p>
+
+</div>
+
+<div class="row text-center">
+
+<div class="col">
+
+<h4>Python</h4>
+
+</div>
+
+<div class="col">
+
+<h4>Pandas</h4>
+
+</div>
+
+<div class="col">
+
+<h4>Plotly</h4>
+
+</div>
+
+<div class="col">
+
+<h4>Scikit-Learn</h4>
+
+</div>
+
+<div class="col">
+
+<h4>Flask</h4>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ======================================= -->
+<!-- FINAL CTA -->
+<!-- ======================================= -->
+
+<section class="text-center">
+
+<div class="container">
+
+<h2 class="section-title">
+
+Ready to Explore Airline Intelligence?
+
+</h2>
+
+<p class="section-subtitle">
+
+Navigate through the platform and
+discover meaningful customer insights.
+
+</p>
+
+<a href="/flight-deck"
+class="btn-airline">
+
+Launch Dashboard
+
+</a>
+
+</div>
+
+</section>
+
+{% endblock %}

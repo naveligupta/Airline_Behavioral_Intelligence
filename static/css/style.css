@@ -1,0 +1,590 @@
+/* ==========================================
+   GOOGLE FONT & RESET
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:#F4F7FB;
+
+    color:#1C2833;
+
+    overflow-x:hidden;
+
+}
+
+
+/* ==========================================
+   COLORS
+========================================== */
+
+/*
+
+Navy Blue      #0B1F3A
+
+Sky Blue       #2E86DE
+
+Gold           #F4C542
+
+Light BG       #F4F7FB
+
+White          #FFFFFF
+
+*/
+
+
+/* ==========================================
+   NAVBAR
+========================================== */
+
+.navbar{
+
+    background:rgba(11,31,58,.95);
+
+    backdrop-filter:blur(12px);
+
+    transition:.4s;
+
+    padding:15px 0;
+
+}
+
+.navbar-brand{
+
+    font-size:24px;
+
+    font-weight:700;
+
+    color:white !important;
+
+}
+
+.nav-link{
+
+    color:white !important;
+
+    margin-left:15px;
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+.nav-link:hover{
+
+    color:#F4C542 !important;
+
+}
+
+
+/* ==========================================
+   CONTAINER
+========================================== */
+
+.container{
+
+    max-width:1250px;
+
+}
+
+
+/* ==========================================
+   SECTION
+========================================== */
+
+section{
+
+    padding:80px 0;
+
+}
+
+
+/* ==========================================
+   HEADINGS
+========================================== */
+
+.section-title{
+
+    font-size:38px;
+
+    font-weight:700;
+
+    color:#0B1F3A;
+
+    margin-bottom:15px;
+
+}
+
+.section-subtitle{
+
+    color:#6c757d;
+
+    margin-bottom:40px;
+
+}
+/* ==========================================
+   HERO SECTION
+========================================== */
+
+.hero{
+
+    height:100vh;
+
+    background:
+        linear-gradient(
+            rgba(11,31,58,.75),
+            rgba(11,31,58,.75)
+        ),
+        url("../images/home_banner.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    color:white;
+
+}
+
+.hero h1{
+
+    font-size:64px;
+
+    font-weight:700;
+
+    margin-bottom:20px;
+
+}
+
+.hero p{
+
+    font-size:22px;
+
+    margin-bottom:35px;
+
+    color:#f8f9fa;
+
+}
+
+
+/* ==========================================
+   BUTTONS
+========================================== */
+
+.btn-airline{
+
+    background:#F4C542;
+
+    color:#0B1F3A;
+
+    padding:15px 35px;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+    margin-right:15px;
+
+}
+
+.btn-airline:hover{
+
+    background:white;
+
+    transform:translateY(-3px);
+
+    color:#0B1F3A;
+
+}
+
+.btn-outline-airline{
+
+    border:2px solid white;
+
+    color:white;
+
+    padding:15px 35px;
+
+    border-radius:50px;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.btn-outline-airline:hover{
+
+    background:white;
+
+    color:#0B1F3A;
+
+}
+
+
+/* ==========================================
+   KPI CARDS
+========================================== */
+
+.kpi-card{
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:30px;
+
+    text-align:center;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.kpi-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.kpi-card h2{
+
+    color:#2E86DE;
+
+    font-size:42px;
+
+    font-weight:700;
+
+}
+
+.kpi-card p{
+
+    margin-top:10px;
+
+    color:#6c757d;
+
+}
+
+
+/* ==========================================
+   FEATURE CARDS
+========================================== */
+
+.feature-card{
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:35px;
+
+    text-align:center;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+    height:100%;
+
+    border-top:5px solid #F4C542;
+
+}
+
+.feature-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.feature-card i{
+
+    font-size:48px;
+
+    color:#2E86DE;
+
+    margin-bottom:20px;
+
+}
+
+.feature-card h4{
+
+    font-weight:600;
+
+    margin-bottom:15px;
+
+}
+/* ==========================================
+   FOOTER
+========================================== */
+
+.footer{
+
+    background:#0B1F3A;
+
+    color:white;
+
+    padding:60px 0 25px;
+
+}
+
+.footer h4,
+.footer h5{
+
+    color:white;
+
+    margin-bottom:20px;
+
+}
+
+.footer p{
+
+    color:#d6d6d6;
+
+    line-height:1.8;
+
+}
+
+.footer hr{
+
+    border-color:rgba(255,255,255,.15);
+
+    margin:30px 0;
+
+}
+
+.footer-links{
+
+    list-style:none;
+
+    padding:0;
+
+}
+
+.footer-links li{
+
+    margin-bottom:12px;
+
+}
+
+.footer-links a{
+
+    color:#d6d6d6;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.footer-links a:hover{
+
+    color:#F4C542;
+
+    padding-left:5px;
+
+}
+
+
+/* ==========================================
+   SCROLL TO TOP BUTTON
+========================================== */
+
+#topBtn{
+
+    display:none;
+
+    position:fixed;
+
+    right:25px;
+
+    bottom:25px;
+
+    width:50px;
+
+    height:50px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#2E86DE;
+
+    color:white;
+
+    cursor:pointer;
+
+    font-size:20px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.25);
+
+    transition:.3s;
+
+    z-index:999;
+
+}
+
+#topBtn:hover{
+
+    background:#F4C542;
+
+    color:#0B1F3A;
+
+}
+
+
+/* ==========================================
+   ANIMATIONS
+========================================== */
+
+.feature-card,
+.kpi-card{
+
+    animation:fadeUp .7s ease;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(30px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+/* ==========================================
+   RESPONSIVE DESIGN
+========================================== */
+
+@media(max-width:992px){
+
+    .hero h1{
+
+        font-size:48px;
+
+    }
+
+    .hero p{
+
+        font-size:20px;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .hero{
+
+        height:85vh;
+
+        padding:20px;
+
+    }
+
+    .hero h1{
+
+        font-size:36px;
+
+    }
+
+    .hero p{
+
+        font-size:18px;
+
+    }
+
+    .btn-airline,
+    .btn-outline-airline{
+
+        display:block;
+
+        width:100%;
+
+        margin:12px 0;
+
+        text-align:center;
+
+    }
+
+    .section-title{
+
+        font-size:30px;
+
+    }
+
+    .navbar-brand{
+
+        font-size:20px;
+
+    }
+
+}
+
+@media(max-width:576px){
+
+    .hero h1{
+
+        font-size:30px;
+
+    }
+
+    .hero p{
+
+        font-size:16px;
+
+    }
+
+    .kpi-card{
+
+        margin-bottom:20px;
+
+    }
+
+    .feature-card{
+
+        margin-bottom:20px;
+
+    }
+
+}
+
+/* ==========================================
+   END OF FILE
+========================================== */
