@@ -1,4 +1,10 @@
 # ✈️ Airline Behavioural Intelligence Platform
+![Python](https://img.shields.io/badge/Python-3.12-blue?logo=python)
+![Flask](https://img.shields.io/badge/Flask-Web%20Framework-black?logo=flask)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-ML-orange?logo=scikitlearn)
+![Plotly](https://img.shields.io/badge/Plotly-Visualization-blue?logo=plotly)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-5-purple?logo=bootstrap)
+![Render](https://img.shields.io/badge/Deployment-Render-success?logo=render)
 
 An end-to-end Machine Learning and Business Intelligence platform that analyzes airline customer behaviour, segments passengers, predicts churn risk, and provides actionable retention insights through an interactive Flask web application.
 
