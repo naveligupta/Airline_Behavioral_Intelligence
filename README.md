@@ -1,4 +1,4 @@
-# ✈️ Airline Behavioral Intelligence Platform
+# ✈️ Airline Behavioural Intelligence Platform
 
 An end-to-end Machine Learning and Business Intelligence platform that analyzes airline customer behaviour, segments passengers, predicts churn risk, and provides actionable retention insights through an interactive Flask web application.
 
@@ -25,19 +25,22 @@ An end-to-end Machine Learning and Business Intelligence platform that analyzes 
 
 ## Passenger Insights
 
-![Passenger Insights](Screenshots/passenger_insights.png)
+![Passenger Insights](Screenshots/passenger_insight1.png)
+![Passenger Insights](Screenshots/passenger_insight2.png)
 
 ---
 
 ## Retention Centre
 
-![Retention Center](Screenshots/retention_center.png)
+![Retention Center](Screenshots/retention_centre1.png)
+![Retention Center](Screenshots/retention_centre2.png)
+![Retention Center](Screenshots/retention_centre3.png)
 
 ---
 
 ## Strategy Hub
 
-![Strategy Hub](Screenshots/strategy_hub.png)
+![Strategy Hub](Screenshots/strategy_hub1.png)
 
 # Project Overview
 
