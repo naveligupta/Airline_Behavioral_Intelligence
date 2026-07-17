@@ -10,8 +10,9 @@ An end-to-end Machine Learning and Business Intelligence platform that analyzes 
 
 ## 🌐 Live Demo
 
-🔗 https://airline-behavioral-intelligence.onrender.com
+🚀 **Try the application here:**
 
+**https://airline-behavioral-intelligence.onrender.com**
 ---
 # Application Preview
 
