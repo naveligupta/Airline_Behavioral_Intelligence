@@ -19,7 +19,7 @@ An end-to-end Machine Learning and Business Intelligence platform that analyzes 
 
 ## Flight Deck
 
-![Flight Deck](Screenshots/flight_deck.png)
+![Flight Deck](Screenshots/flight_deck1.png)
 
 ---
 
