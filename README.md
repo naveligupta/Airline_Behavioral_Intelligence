@@ -1,16 +1,47 @@
 # ✈️ Airline Behavioral Intelligence Platform
 
-An end-to-end Machine Learning and Business Intelligence platform that analyzes airline customer behavior, segments passengers, predicts churn risk, and provides actionable retention insights through an interactive Flask web application.
+An end-to-end Machine Learning and Business Intelligence platform that analyzes airline customer behaviour, segments passengers, predicts churn risk, and provides actionable retention insights through an interactive Flask web application.
 
 ## 🌐 Live Demo
 
 🔗 https://airline-behavioral-intelligence.onrender.com
 
 ---
+# Application Preview
+
+## Home Page
+
+![Home](Screenshots/home1.png)
+![Home](Screenshots/home2.png)
+![Home](Screenshots/home3.png)
+
+---
+
+## Flight Deck
+
+![Flight Deck](Screenshots/flight_deck.png)
+
+---
+
+## Passenger Insights
+
+![Passenger Insights](Screenshots/passenger_insights.png)
+
+---
+
+## Retention Centre
+
+![Retention Center](Screenshots/retention_center.png)
+
+---
+
+## Strategy Hub
+
+![Strategy Hub](Screenshots/strategy_hub.png)
 
 # Project Overview
 
-The Airline Behavioral Intelligence Platform helps airlines transform customer data into business insights using Machine Learning, Customer Analytics, and Interactive Visualizations.
+The Airline Behavioural Intelligence Platform helps airlines transform customer data into business insights using Machine Learning, Customer Analytics, and Interactive Visualisations.
 
 The platform combines:
 
@@ -34,7 +65,7 @@ The platform combines:
 
 ## ✈️ Flight Deck
 
-Provides operational customer analytics including:
+Provides operational customer analytics, including:
 
 - Churn Rate by Customer Segment
 - Customer Activity
@@ -44,7 +75,7 @@ Provides operational customer analytics including:
 
 ## 👥 Passenger Insights
 
-Visualizes customer segmentation including:
+Visualizes customer segmentation, including:
 
 - Customer Segment Distribution
 - Customer Segments Visualized using PCA
